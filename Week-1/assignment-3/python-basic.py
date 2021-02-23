@@ -10,4 +10,5 @@ def find_position(numbers, target):
     for i in range(len(numbers)):
         if numbers[i] == target:
             ans = i
-    return i
+            break
+    return ans
