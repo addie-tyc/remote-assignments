@@ -114,14 +114,16 @@ nav a:hover{
   color: white;    
 }
 
-.button:hover {
+/* use JS instead */
+
+/* .button:hover {
   background-color: rgb(159, 198, 236);
   color: white;
-}
+} */
 
-.button:hover .hidden {
+/* .button:hover .hidden {
   display: inline;
-}
+} */
 
 /* a:visited {
   color: #000;
