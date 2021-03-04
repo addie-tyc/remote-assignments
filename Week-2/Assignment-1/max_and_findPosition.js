@@ -1,6 +1,6 @@
 function max(numbers) {
   let max = numbers.pop();
-  for (i = 0; i < numbers.length; i++) {
+  for (i = 0; i < numbers.length; i += 1) {
     if (numbers[i] > max) {
       max = numbers[i];    
     }
@@ -10,7 +10,7 @@ function max(numbers) {
 
 function findPosition(numbers, target) {
   let ans = -1
-  for (i = 0; i < numbers.length; i++) {
+  for (i = 0; i < numbers.length; i += 1) {
     if (numbers[i] === target) {
       ans = i; 
       break;   
