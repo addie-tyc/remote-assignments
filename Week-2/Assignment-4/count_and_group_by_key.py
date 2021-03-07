@@ -13,6 +13,17 @@ def count(input):
     ans[key] = times     
     return ans
 
+def count_nosorting(input):
+    keys = list(dict.fromkeys(input))
+    values = [0]*len(keys)
+    for s in input:
+	values[keys.index(s)] += 1
+    ans = {}
+    for i in range(len(keys)):
+	ans[keys[i]] = values[i]
+    return ans
+
+
 def group_by_key(input): 
     lst = []
     for dic in input2:
