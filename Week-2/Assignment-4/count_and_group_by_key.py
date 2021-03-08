@@ -14,14 +14,12 @@ def count(input):
     return ans
 
 def count_nosorting(input):
-    keys = list(dict.fromkeys(input))
-    values = [0]*len(keys)
+    keys = dict.fromkeys(input)
+    for i in keys:
+        keys[i] = 0
     for s in input:
-	values[keys.index(s)] += 1
-    ans = {}
-    for i in range(len(keys)):
-	ans[keys[i]] = values[i]
-    return ans
+        keys[s] += 1
+    return keys
 
 
 def group_by_key(input): 
