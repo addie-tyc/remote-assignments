@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Sum</title>
+      <link rel="stylesheet" href="/static/styles.css">
+   </head>
+   <body>
+      <div id=sum>
+         <h1>{{ msg }}</h1>
+         <h2>Enter the number "n" which you want to summarize.</h2>
+         <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+         <p><srong>$${ \mathop{\sum_{i=1}^{n}} i }$$</srong></p> -->
+         <img src="../static/img/summation.png" height=120px alt="sigma signal">
+         <input id=N type="text">
+         <button id=submit type="button" onclick="loadDoc()">Submit n</button>
+      </div>
+      <script type = "text/javascript" 
+       src = "{{ url_for('static', filename = 'scripts.js') }}" ></script>
+      <!-- <script scr="/static/scripts.js"></script> -->
+   </body>
+   
+</html>

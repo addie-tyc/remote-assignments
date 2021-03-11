@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>myName</title>
+      <link rel="stylesheet" href="/static/styles.css">
+   </head>
+   <body>
+      <h1 id=welcomeMsg>Welcome, {{ saved.get('name', '') }}!</h1> 
+      <!-- saves.get('name', '') -->
+      <form id=form action = "{{ url_for('trackName') }}" method = "POST">
+         <p><h3>Enter userName</h3></p>
+         <p><input type = 'text' name = 'name'></p>
+         <p><input type = 'submit' value = 'Enter'/></p>
+      </form>
+      <script type = "text/javascript" 
+       src = "{{ url_for('static', filename = 'scripts.js') }}" ></script>
+   </body>
+</html>
