@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% from 'macros.html' import render_field %}
+
+{% block content %}
+{% if session.get('logged_in') %} 
+    <h1>Welcome, {{ session["email"] }}!<br>
+        Have fun in querying!</h1>
+{% else %}
+    <h1>Welcome to the Data Query site!<br>
+        Sign in and enjoy your journey.</h1>
+{% endif %}
+{% endblock %}
