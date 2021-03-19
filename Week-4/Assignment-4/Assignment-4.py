@@ -13,7 +13,7 @@ class Worker(threading.Thread):
         self.worker_num = worker_num
 
     def run(self):
-        for i in range(3):
+        while job_queue.qsize() > 0:
             self.do_job(job_queue.get())
 
     def do_job(self, index):
