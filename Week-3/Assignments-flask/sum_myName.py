@@ -14,7 +14,7 @@ def summation(number="lackofparameter"):
         msg = "n = {}, \u03a3 = {}".format(number, str(int((1+number)*number/2)))
     except:
         if number == "lackofparameter":
-            msg = "Lack  of parameter"
+            msg = "Lack of parameter"
         else:
             msg =  "Wrong Parameter"
     return render_template("sum.html", msg=msg)
